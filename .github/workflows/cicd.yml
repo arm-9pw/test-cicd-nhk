@@ -33,7 +33,7 @@ jobs:
       uses: aws-actions/configure-aws-credentials@v4
       with:
         role-to-assume: arn:aws:iam::891377305152:role/arm-admin-github
-        aws-region: $AWS_REGION
+        aws-region: '$AWS_REGION'
     
     - name: Login to Amazon ECR
       id: login-ecr
